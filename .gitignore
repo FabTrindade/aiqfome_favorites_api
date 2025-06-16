@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# SQLite (caso alguém mude o banco localmente)
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# IDEs e editores comuns
+.idea/
+*.iml
+
+# Uvicorn logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Python Egg
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Database files dump (se houver)
+*.sql
