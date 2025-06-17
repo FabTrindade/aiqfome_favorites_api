@@ -1,5 +1,3 @@
-Markdown
-
 # aiqfome_favorites_api
 
 API RESTful para cadastro e gerenciamento de favoritos de clientes, construída com FastAPI, utilizando banco de dados PostgreSQL e SQLAlchemy ORM.
