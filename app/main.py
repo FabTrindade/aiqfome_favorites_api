@@ -1,5 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
+from dotenv import load_dotenv
+load_dotenv()
 from .database import SessionLocal, engine, Base
 from . import models, schemas, crud, auth
 
