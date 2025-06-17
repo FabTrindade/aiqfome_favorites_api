@@ -18,7 +18,8 @@ venv/
 *.sqlite3
 
 # VS Code settings
-.vscode/
+.vscode/*
+!.vscode/launch.json
 
 # IDEs e editores comuns
 .idea/
