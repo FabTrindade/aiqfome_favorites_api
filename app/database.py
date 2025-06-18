@@ -8,8 +8,8 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 if not DATABASE_URL:
     raise EnvironmentError("A variável de ambiente DATABASE_URL não está definida. Por favor, configure no seu .env ou no ambiente.")
 
-# Criação do engine
-engine = create_engine(DATABASE_URL)
+# Criação do engine com pool de conexões
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 
 # Configuração da sessão
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
